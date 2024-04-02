@@ -29,7 +29,7 @@ function Login() {
                 </h3>
                 <span className="bg-[#ff0336] w-[50px] h-[4px] absolute top-[33px]"></span>
                 <p className="text-[15px] font-medium text-[#646464]">
-                  Navoi Street, 42
+                  Navoi Street, 46
                   <br /> Tashkent, Uzb
                 </p>
               </div>
