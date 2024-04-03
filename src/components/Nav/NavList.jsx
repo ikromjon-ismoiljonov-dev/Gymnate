@@ -14,13 +14,13 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <a href="/">Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <Link onClick={goTop} to={"/about"}>
+          <Link  to={"/about"}>
             About
           </Link>
         </li>
@@ -28,7 +28,7 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <Link onClick={goTop} to={"/gallery/page-1"}>
+          <Link  to={"/gallery/page-1"}>
             Gallery
           </Link>
         </li>
@@ -36,7 +36,7 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <Link onClick={goTop} to={"/schedule/monday"}>
+          <Link  to={"/schedule/monday"}>
             Schedule
           </Link>
         </li>
@@ -44,7 +44,7 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <Link onClick={goTop} to={"/blog"}>
+          <Link  to={"/blog"}>
             Blog
           </Link>
         </li>
@@ -52,15 +52,16 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <Link onClick={goTop} to={"/pricing"}>
+          <Link to="/pricing">
             Pricing
           </Link>
+          {/* <Link to='/gogo'>Pricing 2</Link> */}
         </li>
         <li
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <Link onClick={goTop} to={"/classes"}>
+          <Link  to={"/classes"}>
             Classes
           </Link>
         </li>
@@ -68,7 +69,7 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <Link onClick={goTop} to={"/contact"}>
+          <Link  to={"/contact"}>
             Contact
           </Link>
         </li>

@@ -64,7 +64,7 @@ function Navbar() {
           <img
             src={Logo}
             alt="logo_img"
-            onClick={goTop}
+              
             className="w-full h-auto"
           />
         </Link>
@@ -90,7 +90,7 @@ function Navbar() {
               <ul className="text-center flex flex-col gap-10 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
                 <li onClick={hamburgerMenu}>
                   <a
-                    onClick={() => window.top(0, 0)}
+                       
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     href="/#home"
                   >
@@ -99,16 +99,16 @@ function Navbar() {
                 </li>
                 <li onClick={hamburgerMenu}>
                   <Link
-                    onClick={() => window.top(0, 0)}
+                       
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/about"
                   >
                     About
                   </Link>
                 </li>
-                <li onClick={hamburgerMenu}>
+                <li>
                   <Link
-                    onClick={() => window.top(0, 0)}
+                       
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/schedule/monday"
                   >
@@ -117,7 +117,7 @@ function Navbar() {
                 </li>
                 <li onClick={hamburgerMenu}>
                   <Link
-                    onClick={() => window.top(0, 0)}
+                       
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/gallery/page-1"
                   >
@@ -126,7 +126,7 @@ function Navbar() {
                 </li>
                 <li onClick={hamburgerMenu}>
                   <Link
-                    onClick={() => window.top(0, 0)}
+                       
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/blog"
                   >
@@ -135,7 +135,7 @@ function Navbar() {
                 </li>
                 <li onClick={hamburgerMenu}>
                   <Link
-                    onClick={() => window.top(0, 0)}
+                       
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/contact"
                   >
@@ -144,7 +144,7 @@ function Navbar() {
                 </li>
                 <li onClick={hamburgerMenu}>
                   <Link
-                    onClick={() => window.top(0, 0)}
+                       
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/pricing"
                   >
@@ -153,7 +153,7 @@ function Navbar() {
                 </li>
                 <li onClick={hamburgerMenu}>
                   <Link
-                    onClick={() => window.top(0, 0)}
+                       
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/classes"
                   >
@@ -230,7 +230,7 @@ function Navbar() {
                   <h3 className="text-[2rem] font-bold">Contact Info</h3>
                   <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#ff0336] cursor-pointer ease-in duration-200">
                     <i className="fa-solid fa-location-dot text-[#ff0336]"></i>
-                    &nbsp; Navoiy 46, Tashkent
+                    &nbsp; Navoiy 46, Tashkent  
                   </p>
                   <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#ff0336] cursor-pointer ease-in duration-200">
                     <i className="fa-solid fa-phone text-[#ff0336]"></i>&nbsp;
@@ -265,7 +265,7 @@ function Navbar() {
               className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
             ></i>
             {/* account */}
-            <Link onClick={goTop} to="/signup" title="signup_button">
+            <Link    to="/signup" title="signup_button">
               <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
             </Link>
             {/* sidebar */}
@@ -277,7 +277,7 @@ function Navbar() {
           {/* spin box */}
           <div className="border-[rgb(255,255,255,0.3)] border-solid border-2  p-2 rounded-md min620:hidden">
             <Link
-              onClick={goTop}
+                
               to={"/contact"}
               onMouseEnter={joinSpin}
               onMouseLeave={stopSpin}

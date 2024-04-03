@@ -25,17 +25,18 @@ import About from "./Pages/About";
 function App() {
   return (
     <>
-      <AuthContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="login" element={<Login />} />
-          <Route path="signup" element={<SignUp />} />
-          <Route path="classes" element={<Classes />} />
-          <Route path="pricing" element={<Price />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="about" element={<About />} />
+          <Route path="/" element={<Home/>} />
+          {/* <Route path="/contact" element={<Contact />} />  */}
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/pricing" element={<Price />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gogo" element={<Price/>}/>
 
           <Route path="schedule" element={<Schedule />}>
             <Route path="monday" element={<Monday />} />
@@ -52,7 +53,6 @@ function App() {
             <Route path="page-2" element={<GalleryPage2 />} />
           </Route>
         </Routes>
-      </AuthContextProvider>
     </>
   );
 }
